@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Queries</title>
+  <meta name="viewpoint" content="width:device-width, initial-scale=1.0">
+  <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    .left {
+    background-color:#2196F3;
+    float: left;
+    width: 20%;
+    padding: 20px;
+    }
+
+    .main {
+    background-color: #f1f1f1;
+    float: left;
+    width: 60%;
+    padding: 20px;
+    }
+
+    .right {
+    background-color: #04AA6D;
+    padding: 20px;
+    float: left;
+    width: 20%;
+    }
+
+    @media screen and (max-width:800px) {
+    .left, .main, .right {
+    width: 100%;
+    }
+    }
+  </style>
+</head>
+<body>
+<h2>Media Queries</h2>
+<p>try to resize this window.</p>
+
+<div class="left">
+  <p>Left Menu</p>
+</div>
+<div class="main">
+  <p>Main Content</p>
+</div>
+<div class="right">
+  <p>Right Content</p>
+</div>
+</body>
+</html>
