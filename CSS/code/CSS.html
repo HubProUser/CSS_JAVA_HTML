@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>p_style</title>
+    <title>CSS</title>
   <style>
     body {
-    background: url("/CSS/picchs/back.jpeg") repeat-x fixed;
+    background: url("/CSS/picchs/back.jpeg") repeat-x scroll;
     }
 
-    p {
-    color: brown;
-    text-align: center;
-    }
+
+
 
     #styled {
     color: red;
@@ -28,12 +26,104 @@
     padding: 10px;
     }
 
+
+
+
+
     p.lock {
     text-align: center;
     color: white;
     background-color: #333300;
     padding: 10px;
     }
+
+    p.model {
+    padding: 10px;
+    border: 5px solid green;
+    margin: 40px;
+    }
+
+
+
+
+    img.sub {
+    vertical-align: sub;
+    }
+
+    img.super {
+    vertical-align: super;
+    }
+
+
+
+
+    h2.overline {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 10px;
+    }
+
+    h2.line-through {
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    }
+
+    h2.underline {
+    text-decoration: underline green wavy 5px;
+    }
+
+
+
+
+    p.uppercase {
+    text-transform: uppercase;
+    }
+
+    p.lowercase {
+    text-transform: lowercase;
+    }
+
+    p.capitalize {
+    text-transform: capitalize;
+    }
+
+
+
+
+    p.indent {
+    text-indent: 50px;
+    }
+
+    p.letter-spacing {
+    letter-spacing: 5px
+    }
+
+    p.line-height {
+    line-height: 3
+    }
+
+    p.word-spacing {
+    word-spacing: 10px;
+    }
+
+    p.white-space {
+    white-space: nowrap;
+    }
+
+
+
+
+    p.shadow {
+    text-shadow: 2px 2px red;
+    }
+
+    p.s-blur {
+    text-shadow: 2px 2px 10px red;
+    }
+
   </style>
 </head>
 <body>
@@ -44,5 +134,51 @@
 <p class="center back">This paragraph is stiled by class.</p>
 <hr>
 <p class="lock">Another tag with this class won't be affected.</p>
+<div>
+    <h1>Box Model</h1>
+    <p class="model">Content-Padding-Border-Margin</p>
+</div>
+<hr>
+<div>
+    <p style="text-align: justify; text-align-last: center; border: 1px solid black; padding: 5px; width: 200px; height: 200px;">
+        Just look how the text looks. fewqfvwasdv dq nvcqwoe vncdqw fqce wdfc eqf eqagvqr4 gvaefdafs 43qf eaogqep[]l ferq g
+    </p>
+</div>
+<hr>
+<div>
+    <p>Img <img class="sub" src="/CSS/picchs/sqpurple.gif">
+        low according to text.
+    </p>
+    <p>Img <img class="super" src="/CSS/picchs/sqpurple.gif">
+        low according to text.
+    </p>
+</div>
+<hr>
+<div>
+    <h2 class="overline">Overline text decoration.</h2>
+    <h2 class="line-through">Line-through text decoration.</h2>
+    <h2 class="underline">Underline text decoration.</h2>
+</div>
+<hr>
+<div>
+    <p class="uppercase">This text is uppercase.</p>
+    <p class="lowercase">This text is lowercase.</p>
+    <p class="capitalize">This text is capitalized.</p>
+</div>
+<hr>
+<div>
+    <p class="indent">This paragraph has indent parameter = 50px</p>
+    <p class="letter-spacing">This paragraph has letter-spacing parameter = 5px</p><br>
+    <p class="line-height">
+        This is first part of paragraph.<br>
+        This is second part of paragraph.
+    </p>
+    <p class="word-spacing">This paragraph has word-spacing parameter = 10px</p>
+    <p class="white-space">Text in this paragraph will never wrap. Some text to see it: fqejnf eqwif eqf194f 43 fuef 19 31f e1 f1h349h fue31h few 1f1h9 1euhf feqr frqe freqgfeg234ty54h5 5h24rw h23542 hrw gfea g2 gqrw92h19</p>
+</div>
+<div>
+    <p class="shadow" style="font-size: 300%">This text has red shadow 2x2 effect.</p>
+    <p class="s-blur">This text is the same but with 10px blur</p>
+</div>
 </body>
 </html>
