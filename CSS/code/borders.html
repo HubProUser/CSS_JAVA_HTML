@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borders</title>
+    <style>
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mixed {border-style: dotted dashed solid double;}
+        p.one {border: solid medium red;}
+        p.two {border: solid thick green;}
+        p.three {border: solid 7px blue;}
+        p.radius {border-style: solid; border-radius: 10px; padding: 5px}
+        p.margin {
+        border-style: solid;
+        margin: 40px 20px 30px;
+        padding: 5px;
+        }
+        p.outline {
+        border: 3px solid green;
+        border-radius: 10px;
+        padding: 5px;
+        outline: 2px solid red;
+        outline-offset: 15px;
+        }
+    </style>
+</head>
+<body>
+<p>Types</p>
+<p class="dotted">Dotted border</p>
+<p class="dashed"> Dashed border</p>
+<p class="solid">Solid border</p>
+<p class="double">Double border</p>
+<p class="groove">Groove border</p>
+<p class="ridge">Ridge border</p>
+<p class="inset">Inset border</p>
+<p class="outset">Outset border</p>
+<p class="none">None border</p>
+<p class="hidden">Hidden border</p>
+<p class="mixed">Mixed border</p>
+<hr>
+<p class="one">First border</p>
+<p class="two">Second class</p>
+<p class="three">Third border</p>
+<hr>
+<p class="radius">This border has rounded corners</p>
+<hr>
+<p class="margin">This text is far from other elements</p>
+<hr>
+<p class="outline">The outline is 15px outside the border</p>
+</body>
+</html>
