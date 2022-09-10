@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>CSS</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia&effect=fire">
+    <script src="https://kit.fontawesome.com/ef171b819b.js" crossorigin="anonymous"></script>
   <style>
     body {
     background: url("/CSS/picchs/back.jpeg") repeat-x scroll;
@@ -32,7 +33,7 @@
 
 
     p.lock {
-    text-align: center;
+    text-align: right;
     color: white;
     background-color: #333300;
     padding: 10px;
@@ -151,16 +152,102 @@
     font-family: Sofia, sans-serif;
     }
 
+
+
+
+    a:link {
+    color: purple;
+    }
+
+    a:hover {
+    color: green;
+    background-color: black;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    a:active {
+    color: red;
+    }
+
+    a:visited {
+    color: brown;
+    text-decoration: none;
+    }
+
+
+
+
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    th, td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    }
+
+    tr:hover {background-color: coral;}
+
+
+
+
+    p.d_none {
+    display: none;
+    }
+
+    p.hidden {
+    visibility: hidden;
+    }
+
+    li {
+    display: inline;
+    }
+
+
+
+
+    .hid {
+    width: 200px; height: 65px;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 2px;
+    background color: grey;
+    }
+
+    .scroll {
+    width: 200px; height: 65px;
+    overflow: scroll;
+    border: 2px solid black;
+    padding: 2px;
+    background color: grey;
+    }
+
+    .auto {
+    width: 200px;  height: 65px;
+    overflow: auto;
+    border: 2px solid black;
+    padding: 2px;
+    background color: grey;
+    }
+
   </style>
 </head>
 <body>
-<p>This is my first css code. Can't believe I'm doing this.</p>
+<div>
+    <p>This is my first css code. Can't believe I'm doing this.</p>
+    <hr>
+    <p id="styled">Let's watch some films.</p>
+    <hr>
+    <p class="center back">This paragraph is stiled by class.</p>
+    <hr>
+    <p class="lock">Another tag with this class won't be affected.</p>
+</div>
 <hr>
-<p id="styled">Let's watch some films.</p>
-<hr>
-<p class="center back">This paragraph is stiled by class.</p>
-<hr>
-<p class="lock">Another tag with this class won't be affected.</p>
 <div>
     <h1>Box Model</h1>
     <p class="model">Content-Padding-Border-Margin</p>
@@ -218,7 +305,55 @@
 </div>
 <hr>
 <div>
-    <p style="font-size:5vw">Idk what to write here.</p>
+    <p style="font-size:5vw">Font size = 5vw</p>
 </div>
+<hr>
+<div>
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-file"></i>
+    <i class="fas fa-bars"></i>
+</div>
+<div>
+    <a href="https://www.w3schools.com/css/css_link.asp">Link to something.</a>
+</div>
+<hr>
+<table>
+    <tr>
+        <th>drink</th>
+        <th>meal</th>
+        <th>smth</th>
+    </tr>
+    <tr>
+        <td>water</td>
+        <td>cake</td>
+        <td>run</td>
+    </tr>
+    <tr>
+        <td>coffee</td>
+        <td>bread</td>
+        <td>me</td>
+    </tr>
+
+</table>
+<hr>
+<div>
+    <p class="d_none">This paragraph exists but you will forget about this.</p>
+    <p class="hidden">This paragraph is hidden but you will remember about it's existance... I guess</p>
+    <ul>
+        <li><a href="https://www.w3schools.com/css/css_display_visibility.asp">Css.</a></li>
+        <li><a href="https://www.w3schools.com/css/css_display_visibility.asp">The same link.</a></li>
+        <li><a href="https://www.w3schools.com/css/css_display_visibility.asp">Yeah. This too.</a></li>
+    </ul>
+</div>
+<hr>
+<div>
+    <p class="hid">fqfd sfdqwedf ewdqf ewdf qwd fd nqjfo eqw fewf ds fds fjo j j ko  nedcwjoqfbewdjiqfbdsjqk bvjdqs fejbqwjfbsdjkqbf jweqdsbfds kbfnxbfcdsnbqfj ewdbqsfnabfcmnsx,abfjewq bfkdnsbfnc qwk  jewokjko jokj ok o k fe jkpw</p>
+    <p class="scroll">fqfd sfdqwedf ewdqf efdwqsknfbdekwqsbfjkweqnbj ;fnewqj gnfj;f gjrehqgj rheqg hrehjg hjadhs gjrui 4gufiaw fuehdug hqabgfeuwbqu ifhdsj fuwdhfjdsbafiehij fbeifgheqijgfbdshfgies bgiueqrh giuedb giuerbfg jdsbficerqhfiuwae iugherwug badsjigbqejg je bgiudnfkjsdn uewdf qwd fd nqjfo eqw fewf ds fds fjo j j ko fq devf deqfg reqg ehy635j trhwr htrw hgrwfdg reg eg regfdsg rew grth re agf wegrew g   jewokjko jokj ok o k fe jkpw</p>
+    <p class="auto">fqfd sfdqwedf ewdqf ewdfdwqsknfbdekwqsbfjkweqnbj ;fnewqj gnfj;f gjrehqgj rheqg hrehjg hjadhs gjrui 4gufiaw fuehdug hqabgfeuwbqu ifhdsj fuwdhfjdsbafiehij fbeifgheqijgfbdshfgies bgiueqrh giuedb giuerbfg jdsbficerqhfiuwae iugherwug badsjigbqejg je bgiudnfkjsdn uef qwd fd nqjfo eqw fewf ds fds fjo j j ko  fq devf deqfg reqg ehy635j trhwr htrw hgrwfdg reg eg regfdsg rew grth re agf wegrew g  jewokjko jokj ok o k fe jkpw</p>
+</div>
+<hr>
+
 </body>
 </html>
