@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        form {
+        margin: 50px 0 0 3%;
+        }
+
+        label {
+        width: 15%;
+        float: left;
+        display: inline-block;
+        }
+
+        textarea, input[type=text], select {
+        padding: 12px 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        float: right;
+        width: 80%;
+        }
+
+        .clearfix:after {
+        content: '';
+        clear: both;
+        display: table;
+        }
+
+        input[type=button] {
+        float: right;
+        padding: 10px 14px;
+        background: #4CAF50;
+        border: 1px solid black;
+        width: 85px;
+        }
+
+        input[type=button]:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body style="background-color: #e6e6e6;">
+    <form class="clearfix">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="Fname">
+    </form>
+    <form class="clearfix">
+        <label for="sname">Second Name</label>
+        <input type="text" id="sname" name="Sname">
+    </form>
+    <form class="clearfix">
+        <label>Country</label>
+        <select style="width: 84%">
+            <option name="au">Australia</option>
+            <option name="ca">Canada</option>
+            <option name="usa">USA</option>
+        </select>
+    </form>
+    <form class="clearfix">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="Subject" style="height: 300px;"></textarea>
+    </form>
+    <form>
+        <input type="button" value="Submit">
+    </form>
+</body>
+</html>
