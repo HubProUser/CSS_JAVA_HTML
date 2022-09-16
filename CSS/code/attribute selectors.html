@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selectors</title>
+      <style>
+      div a, div img {
+      display: block;
+      margin: 8px 0 0 0;
+      }
+
+      .div1 a[target] {
+      background-color: black;
+      color: white;
+      }
+
+      .div2 a[target='_blank'] {
+      background: yellow;
+      }
+
+      [title~=back] {
+      border: 4px solid black;
+      }
+
+    </style>
+</head>
+<body>
+<div class="div1">
+  <a href="#">none attribute</a>
+  <a href="#" target="_blank">attribute</a>
+</div>
+<hr>
+<div class="div2">
+  <a href="#" target="_self">target = self</a>
+  <a href="#" target="_blank">target = blank</a>
+</div>
+<hr>
+<div>
+  <img src="/CSS/picchs/back.jpeg" title="back" width="230" height="150">
+  <img src="/CSS/picchs/img1.jpeg" title="img1" width="400" height="250">
+</div>
+</body>
+</html>

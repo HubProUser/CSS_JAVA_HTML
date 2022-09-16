@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comb</title>
+    <style>
+      .div1 p {
+      background: orange;
+      }
+
+      .div2 > p {
+      background: yellow;
+      }
+
+      .div3 + p {
+      background: black;
+      color: white;
+      }
+
+      .div4 ~ p {
+      background: tomato;
+      }
+
+      hr {
+      height: 4px;
+      background: black;
+      }
+
+    </style>
+</head>
+<body>
+
+<div class="div1">
+  <h1>Hello</h1>
+  <p>Paragraph 1</p>
+  <h2>Bye</h2>
+  <p>Paragraph 2</p>
+</div>
+<hr>
+<div class="div2">
+  <h1>pfff</h1>
+  <p>This text is child of div element</p>
+  <section>
+    <p>This text is child of <b>section</b> element</p>
+  </section>
+</div>
+<hr>
+<div class="div3">
+  <p>paragraph 1 (div)</p>
+  <p>paragraph 2 (div)</p>
+</div>
+<p>first paragraph (after div) element</p>
+<p>second paragraph (after div) element</p>
+<hr>
+<div class="div4">
+  <p>paragraph 1 (div)</p>
+  <p>paragraph 2 (div)</p>
+</div>
+<p>first paragraph (after div) element</p>
+<p>second paragraph (after div) element</p>
+</body>
+</html>
