@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout</title>
+    <style>
+      .head, footer{
+      background: #f1f1f1;
+      text-align: center;
+      padding: 30px;
+      }
+
+      .clearfix::after {
+      clear: both;
+      content: '';
+      display: table;
+      }
+
+      header {
+      font-size: 36px;
+      }
+
+      ul {
+      list-style-type: none;
+      margin: 0; padding: 0;
+      background: grey;
+      }
+
+      li[type=nav] {
+      display: inline-block;
+      padding: 16px 18px;
+      }
+
+      li[type=right] {
+      float: right;
+      background: tomato;
+      padding: 16px 18px;
+      }
+
+      li:hover {
+      background: lightgreen;
+      cursor: pointer;
+      }
+
+      .content {
+      margin-top: 15px;
+      }
+
+      .side {
+      float: left;
+      width: 15%;
+      background: #f2f2f2;
+      text-align: center;
+      }
+
+      .main_content {
+      float: left;
+      width: 70%;
+      background-color: #e6e6e6;
+      }
+
+      .dropdown {
+      display: inline-block;
+      position: relative;
+      }
+
+      .drop_c {
+      display: none;
+      position: absolute;
+      list-style-type: none;
+      min-width: 100px;
+      background: white;
+      z-index: 1;
+      box-shadow: 0 8px 16px 0px rgba(0,0,0,0.2);
+      }
+
+      .drop_c > li {
+      padding: 14px 16px;
+      display: block;
+      }
+
+      .dropdown:hover .drop_c {
+      display: block;
+      }
+
+      .drop_c li:hover {
+      background: orange;
+      }
+
+      .main_content > p, .main_content > h2 {
+      margin-left: 8px;
+      }
+
+      @media screen and (max-width: 1100px) {
+      .side[type=left] {
+      display: none;
+      }
+      .main_content {
+      width: 75%;
+      }
+      .side[type=right] {
+      width: 25%;
+      }
+      }
+
+      @media screen and (max-width: 700px) {
+      .main_content {
+      width: 100%;
+      }
+      .side {
+      display: none;
+      }
+      }
+
+    </style>
+</head>
+<body>
+<div class="head">
+  <header>
+    <b>My Website</b>
+  </header>
+  <p style="">My first full layout!!!</p>
+</div>
+<div class="nav">
+  <ul type="nav">
+    <li type="nav">Link</li>
+    <li type="nav">Link</li>
+    <li  class='dropdown' type="nav">Link
+        <ul class="drop_c">
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+        </ul>
+    </li>
+    <li type="right">Link</li>
+  </ul>
+</div>
+<div class="content clearfix">
+ <div class="side" type="left" style="height: 300px;">
+   <h3>Some content</h3>
+   <p>Idk what to write here. Just look how I'm doing this layout.</p>
+ </div>
+  <div class="main_content" style="height: 300px;">
+    <h2>This is the main part of a content on this page</h2>
+    <p>Fact: The world’s oldest wooden wheel has been around for more than 5,000 years</p><br>
+    <p>Fact: Dead skin cells are a main ingredient in household dust</p><br>
+    <p>Fact: The bumblebee bat is the world’s smallest mammal</p>
+  </div>
+  <div class="side" type="right" style="height: 300px">
+    <h3>Some content</h3>
+    <p>Idk what to write here. Just look how I'm doing this layout.</p>
+  </div>
+</div>
+<footer style="font-size: 40px; margin-top: 15px;">
+  Hope you like it!!!
+</footer>
+</body>
+</html>
