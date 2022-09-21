@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animations</title>
+  <style>
+    div {
+    float: left;
+    margin-right: 30px;
+    }
+
+    #box {
+    height: 100px;
+    width: 100px;
+    background: red;
+    animation: example 4s;
+    animation-fill-mode: forwards;
+    }
+
+    #box2 {
+    height: 100px;
+    width: 100px;
+    background: red;
+    animation: example2 8s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    }
+
+    #box3 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background: red;
+    animation: example3 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    }
+
+    @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+    }
+
+    @keyframes example2 {
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background: green;}
+    100% {background: blue;}
+    }
+
+    @keyframes example3 {
+    0% {background-color:red; left: 0px; top:0px;}
+    25% {background-color: yellow; left:200px; top:0px;}
+    50% {background-color: green; left:200px; top:200px;}
+    75% {background-color: blue; left:0px; top:200px;}
+    100% {background: red: blue; left:0px; top:0px; transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+<div id="box"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+</body>
+</html>
