@@ -13,6 +13,18 @@
   height: 200px; width: 150px;
   }
 
+  .img1_1 {
+  object-fit: cover;
+  height: 200px; width: 150px;
+  object-position: 0% 100%;
+  }
+
+  .img1_2 {
+  object-fit: cover;
+  height: 200px; width: 150px;
+  object-position: 100% 100%;
+  }
+
   .img2 {
   object-fit: contain;
   height: 200px; width: 150px;
@@ -36,6 +48,8 @@
   div {
   float: left;
   margin-right: 30px;
+  height: 240px;
+  margin-bottom: 40px;
   }
 
   img {
@@ -44,12 +58,20 @@
   }
   </style>
 </head>
-<body style="background-image: url(/CSS/picchs/grey.jpeg)">
+<body style="background-image: url(/CSS/picchs/grey.jpeg); height: 1000px;">
 <img src="/CSS/picchs/img4.jpeg" style="margin-bottom: 40px;">
 <div>
     <div>
         <img class="img1" src="/CSS/picchs/img4.jpeg">
         <p>Cover</p>
+    </div>
+    <div>
+        <img class="img1_1" src="/CSS/picchs/img4.jpeg">
+        <p style="width: 150px;">Cover (object-position: 0% 100%)</p>
+    </div>
+    <div>
+        <img class="img1_2" src="/CSS/picchs/img4.jpeg">
+        <p style="width: 150px;">Cover (object-position: 100% 100%)</p>
     </div>
     <div>
         <img class="img2" src="/CSS/picchs/img4.jpeg">

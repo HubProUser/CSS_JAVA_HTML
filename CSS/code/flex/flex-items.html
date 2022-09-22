@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+  <style>
+  .container {
+  display: flex;
+  background: lightblue;
+  margin-bottom: 30px;
+  }
+
+  .container > div {
+  background: white;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  }
+
+  .container > div {
+  background: white;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  }
+  </style>
+</head>
+<body>
+<h1>flex:</h1> <h3>is a shorthand for the flex-grow, flex-shrink, flex-basis</h3>
+<br>
+<h2>style="order: x"</h2>
+<div class="container">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div>
+  <div style="order: 1">4</div>
+</div>
+<h2>style="flex-grow: X"</h2>
+<div class="container">
+  <div>1</div>
+  <div style="flex-grow: 2">2</div>
+  <div style="flex-grow: 1">3</div>
+  <div style="flex-grow: 8">4</div>
+</div>
+<h2>style="flex-shrink: X"</h2>
+<div class="container">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-shrink: 0">3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+</div>
+<h2>style="flex-basis: Ypx"</h2>
+<div class="container">
+  <div>1</div>
+  <div style="flex-basis: 200px">2</div>
+  <div>3</div>
+  <div>4</div>
+</div>
+<h2>style="align-self:&emsp;flex-start&emsp;center&emsp;flex-end"</h2>
+<div class="container" style="height: 200px">
+  <div style="align-self: flex-end">end</div>
+  <div>2</div>
+  <div style="align-self: flex-start">start</div>
+  <div style="align-self: center">center</div>
+  <div>5</div>
+</div>
+</body>
+</html>
