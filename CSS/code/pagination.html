@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pages</title>
+  <style>
+  ul.slash {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+  }
+
+  ul.slash li {display: inline;}
+
+  ul.slash li+li:before {
+  padding: 8px;
+  color: black;
+  content: '/\00a0';
+  }
+  </style>
+</head>
+<body>
+<div>
+  <ul class="slash">
+    <li><a href="#"></a>Home</li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+  </ul>
+</div>
+</body>
+</html>

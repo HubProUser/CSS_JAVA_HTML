@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>script</title>
+  <script>
+    function myFunction() {
+    document.getElementById('demo').innerHTML = 'See ya later';
+    }
+  </script>
+</head>
+
+<body>
+
+<div>
+  <p id="demo">A paragraph</p>
+  <button type="button" onclick="myFunction()">Try this</button>
+</div>
+<br>
+<div>
+  <p id="quiz">Better write scripts where?</p>
+  <button type="button" onclick="text()">Check</button>
+</div>
+
+<script>
+  function text() {
+  document.getElementById('quiz').innerHTML = 'Correct! At the end of a &lt;body&gt;';
+  }
+  alert('Hello')
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+  <style>
+    :root {
+    --mycolor: grey;
+    --myborder: 1px solid black;
+    }
+
+    .div1 {
+    color: var(--mycolor);
+    border: var(--myborder);
+    width: 500px;
+    height: 300px;
+    }
+
+    @media screen and (min-width: 600px) {
+    :root {
+    --mycolor: red;
+    }
+    }
+  </style>
+</head>
+<body>
+<div class="div1">asfsa fdsf dsf dsf  as dsa f as</div>
+</body>
+</html>

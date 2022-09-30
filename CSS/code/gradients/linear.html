@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gradients</title>
+    <style>
+        img {
+        box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+        margin-bottom: 100px;
+        }
+
+        .grad1 {
+        height: 200px;
+        background-image: linear-gradient(red, yellow);
+        }
+
+        .grad2 {
+        height: 200px;
+        background-image: linear-gradient(to bottom right, red, yellow);
+        }
+
+        .grad3 {
+        height: 200px;
+        background-image: linear-gradient(0deg, red, yellow);
+        }
+
+        .grad4 {
+        height: 200px;
+        background-image: linear-gradient(red, blue, yellow);
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        }
+
+        .grad_transp {
+        height: 200px;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1),  rgba(255, 0, 0, 1));
+        }
+
+        .rep_lin_grad {
+        height: 200px;
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+    </style>
+</head>
+<body>
+<img src="/CSS/picchs/grad_directions.jpeg">
+<div class="grad1"></div><br>
+<div class="grad2"></div><br>
+<div class="grad3"></div><br>
+<div class="grad4">Some text</div><br>
+<div class="grad_transp"></div><br>
+<div class="rep_lin_grad"></div>
+</body>
+</html>

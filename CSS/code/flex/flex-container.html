@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+  <style>
+    div.container {
+    display: flex;
+    background-color: lightblue;
+    margin-bottom: 30px;
+    }
+
+    div.container > div {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    }
+
+  </style>
+</head>
+<body>
+<h2>flex-direction:</h2><p>(column&emsp;column-reverse&emsp;row wrap&emsp;raw-reverse)</p>
+<div class="container" style="flex-direction: column">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+<h2>flex-wrap:</h2><p>(wrap&emsp;wrap-reverse&emsp;nowrap&emsp;row wrap)</p>
+<div class="container" style="flex-wrap: wrap">
+    <div>A</div><div>A</div><div>A</div><div>A</div>
+    <div>A</div><div>A</div><div>A</div><div>A</div>
+    <div>A</div><div>A</div><div>A</div><div>A</div>
+    <div>A</div><div>A</div><div>A</div><div>A</div>
+    <div>A</div><div>A</div><div>A</div><div>A</div>
+</div>
+<h2>justify-container</h2><p>(center&emsp;flex-start&emsp;flex-end&emsp;space-around&emsp;space-between)</p>
+<div class="container" style="justify-content: flex-end">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+<div class="container" style="justify-content: space-around">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+<h2>Perfect centering</h2><p>justify-content: center;&emsp;align-items: center;</p>
+<div class="container" style="justify-content: center; align-items: center;">
+    <div>center</div>
+</div>
+</body>
+</html>

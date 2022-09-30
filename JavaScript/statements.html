@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>statements</title>
+    <script>
+    var  x = 5;
+    {
+    var  x = 10;
+    }
+
+    let  y = 17;
+    {
+    let y = 20;
+    }
+
+    const a = 45;
+    {
+    const a = 50;
+    }
+    </script>
+</head>
+<body>
+<p id="x"></p>
+<script>
+    document.getElementById('x').innerHTML = x + ', ' + y + ', ' + a;
+</script>
+</body>
+</html>

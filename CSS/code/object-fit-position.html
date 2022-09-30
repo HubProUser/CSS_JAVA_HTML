@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fit</title>
+  <style>
+  p {
+  color: white;
+  }
+
+  .img1 {
+  object-fit: cover;
+  height: 200px; width: 150px;
+  }
+
+  .img1_1 {
+  object-fit: cover;
+  height: 200px; width: 150px;
+  object-position: 0% 100%;
+  }
+
+  .img1_2 {
+  object-fit: cover;
+  height: 200px; width: 150px;
+  object-position: 100% 100%;
+  }
+
+  .img2 {
+  object-fit: contain;
+  height: 200px; width: 150px;
+  }
+
+  .img3 {
+  height: 200px; width: 150px;
+  object-fit: fill;
+  }
+
+  .img4 {
+  width: 150px; height: 200px;
+  object-fit: none;
+  }
+
+  .img5 {
+  width: 150px; height: 200px;
+  object-fit: scale-down;
+  }
+
+  div {
+  float: left;
+  margin-right: 30px;
+  height: 240px;
+  margin-bottom: 40px;
+  }
+
+  img {
+  border: 1px solid white;
+  border-radius: 6px;
+  }
+  </style>
+</head>
+<body style="background-image: url(/CSS/picchs/grey.jpeg); height: 1000px;">
+<img src="/CSS/picchs/img4.jpeg" style="margin-bottom: 40px;">
+<div>
+    <div>
+        <img class="img1" src="/CSS/picchs/img4.jpeg">
+        <p>Cover</p>
+    </div>
+    <div>
+        <img class="img1_1" src="/CSS/picchs/img4.jpeg">
+        <p style="width: 150px;">Cover (object-position: 0% 100%)</p>
+    </div>
+    <div>
+        <img class="img1_2" src="/CSS/picchs/img4.jpeg">
+        <p style="width: 150px;">Cover (object-position: 100% 100%)</p>
+    </div>
+    <div>
+        <img class="img2" src="/CSS/picchs/img4.jpeg">
+        <p>Scale</p>
+    </div>
+    <div>
+        <img class="img3" src="/CSS/picchs/img4.jpeg">
+        <p>Fill</p>
+    </div>
+    <div>
+        <img class="img4" src="/CSS/picchs/img4.jpeg">
+        <p>None</p>
+    </div>
+    <div>
+        <img class="img5" src="/CSS/picchs/img4.jpeg">
+        <p>Scale-down</p>
+    </div>
+</div>
+</body>
+</html>

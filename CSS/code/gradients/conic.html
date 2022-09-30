@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>conic</title>
+  <style>
+    div {
+    height: 300px; width: 300px;
+    margin-bottom: 20px;
+    }
+
+    .grad1 {
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    }
+
+    .grad2 {
+    background-image: conic-gradient(red 90deg, yellow 180deg, green 270deg);
+    border-radius: 50%;
+    }
+
+    .grad3 {
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, blue 180deg, blue 270deg, green 270deg);
+    border-radius: 50%;
+    }
+
+    .grad4 {
+    background-image: conic-gradient(from 180deg, red, yellow, green);
+    border-radius: 50%;
+    }
+
+    .grab5 {
+    background-image: conic-gradient(at 60% 45%, black, brown, grey);
+    border-radius: 50%
+    }
+
+    .grad6 {
+    background-image: repeating-conic-gradient(red 10deg, red 20deg, yellow 20deg, yellow 30deg, blue 30deg, blue 50deg);
+    border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+<div class="grad1"></div>
+<div class="grad2"></div>
+<div class="grad3"></div>
+<div class="grad4"></div>
+<div class="grab5"></div>
+<div class="grad6"></div>
+</body>
+</html>
