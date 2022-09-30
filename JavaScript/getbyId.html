@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>method 1</title>
+    <style>
+        #block {
+        background-color: green;
+        width: 160px;
+        height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p id="demo">Click the button to change this text</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello Java'">Click me</button>
+</div>
+<br>
+<div>
+    <div id="block"></div>
+    <button type="button" onclick="document.getElementById('block').style.backgroundColor = 'blue'">Button</button>
+</div>
+</body>
+</html>

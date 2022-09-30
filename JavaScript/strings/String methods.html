@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+<p>Apple, Banana, Kiwi</p>
+<button onclick="myDemo()">str.slice(7, 13)</button>
+<button onclick="myDemo1()">str.slice(7)</button>
+<button onclick="elem()">str[0] + ' ' + str[3]</button>
+<p id="demo"><.....></p>
+<br>
+<button onclick="replace()">replace 1</button>
+<button onclick="replace_all()">replace all</button>
+<p id="leave">Please leave now now now</p>
+<br>
+<button onclick="padStart()">4x</button>
+<p id="pad">5</p>
+<p>It only works if the element above is a 'string' type</p>
+<script>
+  let str = "Apple, Banana, Kiwi";
+
+  function myDemo()
+  {
+  document.getElementById('demo').innerHTML = str.slice(7, 13);
+  }
+
+  function myDemo1()
+  {
+  document.getElementById('demo').innerHTML = str.slice(7);
+  }
+
+  function elem()
+  {
+  document.getElementById("demo").innerHTML = str[0] + ' ' + str[2];
+  }
+
+
+  function replace()
+  {
+  let text = document.getElementById('leave').innerHTML;
+  document.getElementById('leave').innerHTML = text.replace('now','tomorrow');
+  }
+
+  function replace_all()
+  {
+  let text = document.getElementById('leave').innerHTML;
+  document.getElementById('leave').innerHTML = text.replace(/now/g,'tomorrow');
+  }
+
+
+  function padStart()
+  {
+  let text = document.getElementById('pad').innerHTML;
+  document.getElementById('pad').innerHTML = text.padStart(4, 'x');
+  }
+</script>
+</body>
+</html>
