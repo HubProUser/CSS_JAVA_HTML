@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ERROOOOOOOORS</title>
+</head>
+<body>
+<input placeholder="your age pls" id="age">
+<button onclick="calc()">Calculate an answer</button>
+<p id="answer"></p>
+<p id="error"></p>
+<script>
+  function calc()
+  {
+  let age = document.getElementById('age').value;
+
+  try
+  {
+  if(age=='') throw 'input your age!!!!!';
+  if(isNaN(age)) throw 'I told your age, IDIOT!!!'
+  age = Number(age);
+  if(age > 20) throw 'u r too old. go away';
+  if(age < 18) throw 'u r too young. leave me. NOW!!!!'
+  else
+  {
+  throw 'Welcome';
+  }
+  }
+  catch(err)
+  {
+  document.getElementById('answer').innerHTML = err;
+  }
+  }
+</script>
+</body>
+</html>

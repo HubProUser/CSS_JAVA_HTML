@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+  let flen = fruits.length;
+
+  let text = '<ul>';
+  for (let i = 0; i < flen; i++)
+  {
+  text += '<li>' + fruits[i] + '</li>';
+  }
+  text += '</ul>';
+
+  document.getElementById('demo').innerHTML = text;
+
+
+  let txt = '<ul>';
+  fruits.forEach(myFunction);
+  txt += '</ul>';
+
+  document.getElementById('demo1').innerHTML = txt;
+
+  function muFunction(value)
+  {
+  txt += '<li>' + value + '</li>'
+  }
+</script>
+</body>
+</html>

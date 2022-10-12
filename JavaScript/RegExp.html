@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exp</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo0"></p>
+<p id="demo1"></p>
+<p id="par">This text has some words with no sense! Pa-ra-pa-ra-pam! P!</p>
+<p id="result"></p>
+<script>
+  let txt = 'Hello world! Bye world. 123456789';
+
+  let n = txt.search('world');
+  let n1 = txt.search(/[1-4]/g);
+
+  document.getElementById('demo').innerHTML = n;
+  document.getElementById('demo0').innerHTML = n1;
+
+
+  let r = txt.replace('Hello', 'Wow');
+
+  document.getElementById('demo1').innerHTML = r;
+
+
+  let text = document.getElementById('par').innerHTML;
+
+  document.getElementById('result').innerHTML = /this/i.test(text);
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+  const person = {
+  firstName: 'Mik',
+  secondName: 'Kim',
+  age: 23,
+  fullName : function() {
+  return this.firstName + ' ' + this.secondName;
+  }
+  };
+
+  document.getElementById('demo').innerHTML = person.fullName();
+
+  const person2 = {
+  firstName: 'Art',
+  secondName: 'Ase',
+  }
+  let x = person.fullName.call(person2);
+
+  document.getElementById('demo1').innerHTML = x;
+</script>
+</body>
+</html>

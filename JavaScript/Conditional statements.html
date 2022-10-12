@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>logic</title>
+</head>
+<body>
+<input id="time" type="number" placeholder="Type in the time ...">
+<button onclick="greeting()">What to say?</button>
+<p id="demo"></p>
+<script>
+  function greeting()
+  {
+  let time = document.getElementById('time').value;
+  let greeting;
+
+  if (time < 6)
+  {
+  greeting = 'Good night';
+  }
+
+  else if (time < 18)
+  {
+  greeting = 'Hello';
+  }
+
+  else
+  {
+  greeting = 'Fuck away';
+  }
+
+  document.getElementById('demo').innerHTML = greeting;
+  }
+</script>
+</body>
+</html>

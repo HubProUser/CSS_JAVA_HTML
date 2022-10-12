@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>method</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  class person
+  {
+
+  constructor(name, sname, height, width)
+  {
+  this.name = name;
+  this.sname = sname;
+  this.height = height;
+  this.width = width;
+  }
+
+  num()
+  {
+  let number = 19;
+  return this.height * this.width + ' ' + number;
+  }
+  }
+
+  let Me = new person('Mikjal', 'Bob', 187, 68);
+  document.getElementById('demo').innerHTML = Me.name + ' ' + Me.num();
+</script>
+</body>
+</html>

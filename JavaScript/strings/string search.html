@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>search</title>
 </head>
 <body>
+<p>Please locate where "locate" occurs!</p>
+<button onclick="indexOf()">What positions do 'locate' words start?</button>
+<p id="demo"></p>
+<button onclick="match()">All matches</button>
+<p id="demo1"></p>
+<script>
+    let str = 'Please locate where "locate" occurs!';
+    function indexOf()
+    {
+    document.getElementById('demo').innerHTML = str.indexOf('locate') + ' ' + str.lastIndexOf('locate');
+    }
 
+    function match()
+    {
+    document.getElementById('demo1').innerHTML = str.match(/oc/g).length;
+    }
+</script>
 </body>
 </html>
