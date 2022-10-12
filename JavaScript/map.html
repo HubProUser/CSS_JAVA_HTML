@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+  const fruits = new Map(
+  [
+  ['apples', 500],
+  ['pineapples', 200],
+  ['watermelons', 1000],
+  ]
+  );
+
+  fruits.set('bananas', 300);
+  fruits.set('oranges', 700);
+
+  fruits.set('apples', 20);
+
+  document.getElementById('demo').innerHTML = fruits.get('apples');
+
+  let txt = '';
+  for (const x of fruits.entries())
+  {
+  txt += x + '<br>';
+  }
+
+  document.getElementById('demo1').innerHTML = txt;
+</script>
+</body>
+</html>

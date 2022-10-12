@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>set</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    const letters = new Set(['a', 'b', 'c']);
+
+    letters.add('d');
+    letters.add('e');
+    letters.add('f');
+
+    let txt = '';
+    for (const x of letters.values())
+    {
+    txt += x + '<br>';
+    }
+
+    document.getElementById('demo').innerHTML = txt;
+</script>
+</body>
+</html>

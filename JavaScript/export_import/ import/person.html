@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Import</title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="module">
+  import { name, age } from './person.js';
+
+  let text = 'Name is ' + name;
+  document.getElementById('demo').innerHTML = text;
+</script>
+</body>
+</html>

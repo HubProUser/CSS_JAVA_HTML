@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>math</title>
+</head>
+<body>
+<p id="demo"></p>
+<button onclick="document.getElementById('demo1').innerHTML = random(10, 100)">Click</button>
+<p id="demo1"></p>
+<script>
+    a = Math.E
+    document.getElementById('demo').innerHTML = a;
+
+
+    function random(min, max)
+    {
+    return Math.floor(Math.random() * (max - min) + min)
+    }
+
+</script>
+</body>
+</html>

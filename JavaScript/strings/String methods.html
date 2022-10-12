@@ -37,15 +37,15 @@
   }
 
 
+  let text = document.getElementById('leave').innerHTML;
+
   function replace()
   {
-  let text = document.getElementById('leave').innerHTML;
   document.getElementById('leave').innerHTML = text.replace('now','tomorrow');
   }
 
   function replace_all()
   {
-  let text = document.getElementById('leave').innerHTML;
   document.getElementById('leave').innerHTML = text.replace(/now/g,'tomorrow');
   }
 

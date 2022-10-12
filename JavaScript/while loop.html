@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while</title>
+</head>
+<body>
+<h4>While</h4>
+<p id="demo"></p>
+<h4>Do while</h4>
+<p id="demo1"></p>
+<script>
+  let i = 0;
+  let txt = '';
+
+  while (i < 10)
+  {
+  txt += 'The number is' + i + '<br>';
+  i++;
+  }
+
+  document.getElementById('demo').innerHTML = txt;
+
+
+  let a = 0;
+  let text = '';
+
+  do
+  {
+  text += 'The number is'+ a+ '<br>';
+  a++;
+  }
+  while (a < 10);
+
+  document.getElementById('demo1').innerHTML = text;
+
+</script>
+</body>
+</html>
