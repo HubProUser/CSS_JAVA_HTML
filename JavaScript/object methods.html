@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Methods FUCK them all</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+  const person =
+  {
+    firstName: 'John',
+    secondName: 'Doe',
+    language: 'Ukrainian'
+  };
+
+  document.getElementById('demo').innerHTML = person.language
+
+
+
+  Object.defineProperty(person, 'language', {value : 'Idk'});
+
+  document.getElementById('demo1').innerHTML = person.language
+
+
+
+  x = Object.keys(person);
+
+  document.getElementById('demo2').innerHTML = x;
+
+
+
+  Object.defineProperty(person, 'age', {value : 200});
+
+  document.getElementById('demo3').innerHTML = person.age + ' years old'
+
+
+
+  Object.defineProperty(person, 'fullName',
+  {
+    get: function() {return this.firstName + ' ' + this.secondName}
+  });
+
+  document.getElementById('demo4').innerHTML = person.fullName
+</script>
+</body>
+</html>

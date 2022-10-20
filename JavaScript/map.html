@@ -7,6 +7,7 @@
 <body>
 <p id="demo"></p>
 <p id="demo1"></p>
+<p id="demo2"></p>
 <script>
   const fruits = new Map(
   [
@@ -23,13 +24,25 @@
 
   document.getElementById('demo').innerHTML = fruits.get('apples');
 
-  let txt = '';
+
+  var txt = '';
   for (const x of fruits.entries())
   {
   txt += x + '<br>';
   }
 
   document.getElementById('demo1').innerHTML = txt;
+
+
+  var txt = '';
+
+  fruits.forEach (function(value, key)
+  {
+    txt += key + ' = ' + value + '<br>'
+  })
+
+  document.getElementById('demo2').innerHTML = txt;
+
 </script>
 </body>
 </html>

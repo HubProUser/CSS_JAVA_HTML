@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>call</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    const person =
+    {
+        fullName: function (age, city)
+        {
+            return this.firstName + ' ' + this.secondName +  ', ' + age + ', ' + city;
+        }
+    }
+
+    const person1 =
+    {
+        firstName: 'John',
+        secondName: 'Doe'
+    }
+
+    const person2 =
+    {
+        firstName: 'Mary',
+        secondName: 'Dias'
+    }
+
+
+    document.getElementById('demo').innerHTML = person.fullName.call(person1, 24, 'Kiev')
+</script>
+</body>
+</html>

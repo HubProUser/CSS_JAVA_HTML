@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+  class Car
+  {
+    constructor(model)
+    {
+      this.carName = model;
+    }
+    static hello()
+    {
+      return 'Hello!';
+    }
+    static bye(x)
+    {
+      return 'Bye ' + x.carName;
+    }
+  }
+
+  let myCar = new Car('Ford');
+
+  document.getElementById('demo').innerHTML = Car.hello();
+  document.getElementById('demo1').innerHTML = Car.bye(myCar);
+</script>
+</body>
+</html>

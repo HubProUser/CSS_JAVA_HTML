@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    function Person(first, last, age, eyeColor)
+    {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyes = eyeColor;
+    }
+
+    Person.prototype.nationality = 'ukrainian';
+
+    const me = new Person('jod', 'dsad', 50, 'green');
+
+    document.getElementById('demo1').innerHTML = me.nationality
+
+
+
+    Person.prototype.name = function()
+    {
+    return this.firstName + ' ' + this.lastName;
+    };
+
+    document.getElementById('demo2').innerHTML = me.name();
+</script>
+</body>
+</html>

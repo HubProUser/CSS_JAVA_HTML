@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bind()</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+  const person =
+  {
+      firstName: 'John',
+      secondName: 'Doe',
+      fullName: function()
+      {
+          return this.firstName + ' ' + this.secondName;
+      }
+  }
+
+  const member =
+  {
+      firstName: 'Lake',
+      secondName: 'Forge'
+  }
+
+  let gotMe = person.fullName.bind(member);
+
+  document.getElementById('demo').innerHTML = gotMe();
+
+
+
+
+  const person1 =
+  {
+      firstName: 'Mikjal',
+      secondName: 'Migel',
+      fullName: function()
+      {
+          x = document.getElementById('demo1');
+          x.innerHTML = this.firstName + ' ' + this.secondName;
+      }
+  }
+
+  let fullName = person1.fullName.bind(person1);
+  setTimeout(fullName, 3000)
+</script>
+</body>
+</html>

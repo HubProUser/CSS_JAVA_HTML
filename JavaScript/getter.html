@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anti-function</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  const person =
+  {
+    firstName: 'John',
+    secondName: 'Doe',
+    language: 'en',
+
+    get fullName()
+      {
+      return this.firstName + ' ' + this.secondName;
+      }
+  };
+
+  document.getElementById('demo').innerHTML = person.fullName;
+</script>
+</body>
+</html>

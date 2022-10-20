@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>const</title>
+</head>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="dream"></p>
+<body>
+<script>
+function Person(first, last, age, eye)
+{
+this.firstName = first;
+this.lastName = last;
+this.age = age;
+this.eyeColor = eye;
+this.changeName = function (name)
+  {
+  this.lastName = name;
+  }
+this.dream = 'Happiness';
+}
+
+const me = new Person ('John', 'Doe', 50, 'blue');
+
+document.getElementById('demo').innerHTML = me.lastName
+
+me.changeName('Mikjal');
+
+document.getElementById('demo1').innerHTML = me.lastName;
+
+document.getElementById('dream').innerHTML = 'My dream is ' + me.dream
+</script>
+</body>
+</html>
