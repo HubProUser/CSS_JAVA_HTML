@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .all
+      {
+        width: 200px; height: 91px;
+        background: lightblue;
+    </style>
+</head>
+<body>
+<div class="all">
+  <p>Please input your age</p>
+  <p id="hid" style="visibility: hidden;">a</p>
+  <div class="age">
+    <input id="inp" placeholder="...">
+    <button onclick="count()">Click</button>
+  </div>
+</div>
+<script>
+  function count()
+  {
+    x = document.getElementById('inp').value
+    let text;
+    if(isNaN(x) || x < 1 || x > 19)
+    {
+      text = "Don't use your PC";
+    }
+    else
+    {
+      text = 'U are young';
+    }
+    document.getElementById('hid').innerHTML = text;
+    document.getElementById('hid').style.visibility = 'visible';
+  }
+</script>
+</body>
+</html>

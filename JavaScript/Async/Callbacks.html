@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>callbacks</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    function Displayer(some)
+    {
+      document.getElementById('demo').innerHTML = some;
+    }
+
+    function myFirst()
+    {
+      Displayer('Hello!');
+    }
+
+    function mySecond()
+    {
+      Displayer('Bye!');
+    }
+
+    myFirst();
+    mySecond();
+
+
+
+    function Displayer_num(some)
+    {
+      document.getElementById('demo1').innerHTML = some;
+    }
+
+    function Calculator(num1, num2)
+    {
+      let result = num1 + num2
+      Displayer_num(result)
+    }
+
+    Calculator(4, 10)
+
+
+
+    function Displayer_callback(some)
+    {
+      document.getElementById('demo2').innerHTML = some;
+    }
+
+
+    function Calculate(num1, num2, callback)
+    {
+      let result = num1 + num2;
+      callback(result);
+    }
+
+    Calculate(5, 12, Displayer_callback);
+</script>
+</body>
+</html>

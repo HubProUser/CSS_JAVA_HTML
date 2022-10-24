@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Try it</h3>
+<p id="demo"></p>
+<script>
+  function Display(some)
+  {
+    document.getElementById('demo').innerHTML = some;
+  }
+
+  function getFile(callback)
+  {
+    let req = new XMLHttpRequest();
+    req.open('GET', 'car.html');
+    req.onload = function ()
+    {
+      if (req.status == 200)
+      {
+        callback(this.responseText);
+      }
+      else
+      {
+        callback('Error: ' + req.status);
+      }
+    }
+    req.send();
+  }
+
+  getFile(Display);
+</script>
+</body>
+</html>

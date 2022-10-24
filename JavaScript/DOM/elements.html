@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="intro">It's a first paragraph with id = 'intro'</p>
+<p id>It's the second paragraph</p>
+<hr>
+<div id="main">
+    <p>We are the champions.</p>
+    <p>Stay away from us.</p>
+</div>
+<hr>
+<div class="main">
+    <p>Jango is free!!</p>
+</div>
+<hr>
+<p class="demo_p">Some text 1</p>
+<p class="demo_p">Some text 2</p>
+<br><br>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+    const element = document.getElementById('intro');
+
+    document.getElementById('demo').innerHTML = 'The text in the intro paragraph is: ' + element.innerHTML;
+
+
+
+    const element1 = document.getElementsByTagName('p');
+
+    document.getElementById('demo1').innerHTML = 'The text in the first > second paragraphs is: ' + element1[0].innerHTML + ' > ' + element1[1].innerHTML;
+
+
+
+    const x = document.getElementById('main');
+    const y = x.getElementsByTagName('p');
+
+    document.getElementById('demo2').innerHTML = 'The text in div element is: ' + y[0].innerHTML + ' ' + y[1].innerHTML;
+
+
+
+    const x1 = document.getElementsByClassName('main');
+    const y1 = x1[0].getElementsByTagName('p');
+
+    document.getElementById('demo3').innerHTML = 'The text in class > p is: ' + y1[0].innerHTML;
+
+
+
+    const x2 = document.querySelectorAll('p.demo_p');
+
+    document.getElementById('demo4').innerHTML = 'Paragraphs are: ' + x2[0].innerHTML + '. ' + x2[1].innerHTML + '.';
+</script>
+</body>
+</html>
